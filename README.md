@@ -110,13 +110,10 @@ Gas Detection → STM32 → Python → Telegram Alert
 
 ---
 
-## 📸 Project Demo
-
-Project images and system demonstrations will be added here.
-
----
 
 ## 👨‍💻 Contributors
+
+https://github.com/salmamahmoud1532007-arch
 
 Developed as a multidisciplinary project combining Machine Learning,
 Embedded Systems, Hardware Design, and Software Integration.
