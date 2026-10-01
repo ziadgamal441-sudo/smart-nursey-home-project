@@ -109,7 +109,19 @@ Gas Detection → STM32 → Python → Telegram Alert
 `Altium Designer` `Schematic Design` `PCB Layout`
 
 ---
+## 🧩 PCB Design
 
+### Schematic
+![Schematic](assets/pcb/schematic.png)
+
+### Component Placement
+![Placement](assets/pcb/component-placement.png)
+
+### PCB Layout
+![PCB Layout](assets/pcb/pcb-layout.png)
+
+### 3D View
+![PCB 3D](assets/pcb/pcb-3d-view.png)
 
 ## 👨‍💻 Contributors
 
