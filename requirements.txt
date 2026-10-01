@@ -1,0 +1,13 @@
+joblib
+librosa
+matplotlib
+noisereduce
+numpy
+webrtcvad
+seaborn
+scikit-learn
+pyserial
+python-vlc
+Pillow
+python-telegram-bot
+python-dotenv
