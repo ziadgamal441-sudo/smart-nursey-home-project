@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Nursery Guardian</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --bg: #0d1117;
+            --panel: #131a22;
+            --border: #263141;
+            --text: #c9d6e3;
+            --dim: #7d8ca0;
+            --accent: #39d98a;
+            --blue: #58a6ff;
+            --warning: #e8b854;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 50px 20px 80px;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+            font-size: 15px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .prompt {
+            color: var(--accent);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--dim);
+            margin-bottom: 20px;
+        }
+
+        .status {
+            display: inline-block;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 5px 12px;
+            font-size: 0.75rem;
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 45px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2::before {
+            content: "# ";
+            color: var(--dim);
+        }
+
+        h3 {
+            color: var(--blue);
+            margin-top: 28px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+
+        li::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .flow {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            padding: 18px;
+            margin: 18px 0;
+            color: var(--accent);
+            white-space: pre-line;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: var(--panel);
+            color: var(--dim);
+        }
+
+        .pcb-image {
+            width: 100%;
+            margin-top: 15px;
+            border: 1px solid var(--border);
+            border-radius: 5px;
+        }
+
+        .image-caption {
+            color: var(--dim);
+            font-size: 0.8rem;
+            margin-top: 6px;
+        }
+
+        .links {
+            margin-top: 45px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .links a {
+            display: block;
+            margin: 8px 0;
+        }
+
+        .links a::before {
+            content: "→ ";
+            color: var(--dim);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--dim);
+            font-size: 0.85rem;
+        }
+
+        code {
+            background: var(--panel);
+            color: var(--accent);
+            padding: 3px 6px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>
+        <span class="prompt">$</span>
+        smart-nursery --project
+    </h1>
+
+    <p class="subtitle">
+        Smart Nursery Guardian — an AI-assisted embedded monitoring system
+        for intelligent infant care.
+    </p>
+
+    <span class="status">PROJECT COMPLETED</span>
+
+
+    <h2>about</h2>
+
+    <p>
+        Smart Nursery Guardian is an integrated AI and Embedded Systems project
+        designed to monitor an infant and the surrounding nursery environment.
+    </p>
+
+    <p>
+        The system combines machine learning-based baby cry classification,
+        STM32-based sensing and control, environmental monitoring,
+        a Python GUI, serial communication, and remote safety alerts.
+    </p>
+
+
+    <h2>system capabilities</h2>
+
+    <ul>
+        <li>Baby cry classification: Hungry, Tired, and Discomfort</li>
+        <li>MFCC-based audio feature extraction</li>
+        <li>Machine Learning classification using Random Forest and SVM</li>
+        <li>PIR-based motion monitoring</li>
+        <li>Temperature monitoring and cooling fan control</li>
+        <li>Ambient light sensing and automatic lighting</li>
+        <li>Gas and smoke safety detection</li>
+        <li>Servo-based crib rocking</li>
+        <li>Python Tkinter monitoring GUI</li>
+        <li>Serial communication between Python and the microcontroller</li>
+        <li>Telegram safety notifications</li>
+        <li>Custom PCB designed using Altium Designer</li>
+    </ul>
+
+
+    <h2>architecture</h2>
+
+    <div class="flow">
+Baby Cry Audio
+      ↓
+Audio Preprocessing
+      ↓
+Feature Extraction
+      ↓
+Machine Learning Model
+      ↓
+Hungry / Tired / Discomfort
+      ↓
+Python GUI
+      ↓
+Serial Communication
+      ↓
+STM32
+      ↓
+Sensors & Actuators
+    </div>
+
+
+    <h2>machine learning pipeline</h2>
+
+    <p>
+        Audio samples are processed before extracting features including
+        MFCC statistics, duration, RMS intensity, fundamental frequency,
+        and zero-crossing rate.
+    </p>
+
+    <p>
+        The training pipeline includes dataset validation, audio augmentation,
+        model comparison, cross-validation, confusion matrix evaluation,
+        and ROC-AUC analysis.
+    </p>
+
+
+    <h2>embedded system</h2>
+
+    <ul>
+        <li>STM32 Microcontroller</li>
+        <li>PIR Motion Sensor</li>
+        <li>LDR Light Sensor</li>
+        <li>Temperature Sensor</li>
+        <li>Gas / Smoke Sensor</li>
+        <li>RGB LED</li>
+        <li>Buzzer</li>
+        <li>Servo Motor</li>
+        <li>DC Fan Motor</li>
+        <li>UART Communication</li>
+    </ul>
+
+
+    <h2>pcb design</h2>
+
+    <p>
+        A custom PCB was developed in Altium Designer to integrate the
+        microcontroller, sensors, communication interfaces, power circuitry,
+        and actuator control electronics.
+    </p>
+
+
+    <h3>01 — Schematic Design</h3>
+
+    <img
+        src="assets/pcb/pcb-schematic.jpg"
+        alt="Smart Nursery Guardian PCB Schematic"
+        class="pcb-image"
+    >
+
+    <p class="image-caption">
+        Complete system schematic including STM32, sensors, power,
+        motor control, USB-C, UART and ST-Link.
+    </p>
+
+
+    <h3>02 — Component Placement</h3>
+
+    <img
+        src="assets/pcb/pcb-component-placement.jpg"
+        alt="PCB Component Placement"
+        class="pcb-image"
+    >
+
+
+    <h3>03 — PCB Layout & Routing</h3>
+
+    <img
+        src="assets/pcb/pcb-layout.jpg"
+        alt="PCB Layout"
+        class="pcb-image"
+    >
+
+
+    <h3>04 — 3D PCB View</h3>
+
+    <img
+        src="assets/pcb/pcb-3d-view.jpg"
+        alt="Smart Nursery Guardian 3D PCB"
+        class="pcb-image"
+    >
+
+
+    <h2>technologies</h2>
+
+    <table>
+
+        <tr>
+            <th>Category</th>
+            <th>Technologies</th>
+        </tr>
+
+        <tr>
+            <td>Machine Learning</td>
+            <td>
+                Python, Scikit-learn, Random Forest, SVM,
+                GridSearchCV
+            </td>
+        </tr>
+
+        <tr>
+            <td>Audio Processing</td>
+            <td>
+                Librosa, MFCC, VAD, Noise Reduction
+            </td>
+        </tr>
+
+        <tr>
+            <td>Embedded Systems</td>
+            <td>
+                STM32, UART, ADC, PWM
+            </td>
+        </tr>
+
+        <tr>
+            <td>Software</td>
+            <td>
+                Python, Tkinter, Serial Communication
+            </td>
+        </tr>
+
+        <tr>
+            <td>PCB Design</td>
+            <td>
+                Altium Designer, Schematic Design,
+                PCB Layout & 3D Visualization
+            </td>
+        </tr>
+
+    </table>
+
+
+    <h2>project workflow</h2>
+
+    <div class="flow">
+Sensors → STM32 → Serial Communication → Python GUI
+
+Baby Cry → Audio Processing → ML Prediction → System Response
+
+Gas Detection → Safety Alert → Telegram Notification
+    </div>
+
+
+    <div class="links">
+
+        <a href="https://github.com/ziadgamal441-sudo/smart-nursey-home-project">
+            GitHub Repository
+        </a>
+
+        <!-- Put your LinkedIn post link here later -->
+        <!--
+        <a href="YOUR_LINKEDIN_POST_URL">
+            LinkedIn Project Post
+        </a>
+        -->
+
+    </div>
+
+
+    <footer>
+        Smart Nursery Guardian · AI × Embedded Systems × PCB Design
+    </footer>
+
+</body>
+
+</html>
