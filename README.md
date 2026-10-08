@@ -111,17 +111,33 @@ Gas Detection → STM32 → Python → Telegram Alert
 ---
 ## 🧩 PCB Design
 
-### Schematic
-![Schematic](assets/pcb/schematic.png)
+### 🔌 PCB Schematic
 
-### Component Placement
-![Placement](assets/pcb/component-placement.png)
+The complete schematic of the Smart Nursery Guardian board, including the
+STM32 microcontroller, power regulation, sensor interfaces, motor control,
+USB-C protection, communication interfaces, and support circuitry.
 
-### PCB Layout
-![PCB Layout](assets/pcb/pcb-layout.png)
+<p align="center">
+  <img src="assets/pcb/pcb-schematic.jpg" width="900">
+</p>
 
-### 3D View
-![PCB 3D](assets/pcb/pcb-3d-view.png)
+### 📐 PCB Component Placement
+
+<p align="center">
+  <img src="assets/pcb/pcb-component-placement.jpg" width="750">
+</p>
+
+### 🧩 PCB Layout & Routing
+
+<p align="center">
+  <img src="assets/pcb/pcb-layout.jpg" width="750">
+</p>
+
+### 🧊 3D PCB View
+
+<p align="center">
+  <img src="assets/pcb/pcb-3d-view.jpg" width="750">
+</p>
 
 ## 👨‍💻 Contributors
 
