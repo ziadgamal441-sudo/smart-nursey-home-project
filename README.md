@@ -141,6 +141,8 @@ USB-C protection, communication interfaces, and support circuitry.
 
 ## Contributors
 
+https://github.com/AbdulhakimAH2
+
 https://github.com/salmamahmoud1532007-arch
 
 Developed as a multidisciplinary project combining Machine Learning,
