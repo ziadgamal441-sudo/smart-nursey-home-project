@@ -58,7 +58,7 @@ Responsible for:
 - LED control
 - Buzzer control
 
-The Python application and STM32 communicate through serial communication.
+The Python application and ESP32 communicate through serial communication.
 
 ---
 
@@ -86,11 +86,11 @@ Hungry / Tired / Discomfort
 
 ## System Flow
 
-Sensors → STM32 → Serial Communication → Python Application
+Sensors → ESP32 → Serial Communication → Python Application
 
 Baby Cry → Audio Processing → ML Classification → GUI Response
 
-Gas Detection → STM32 → Python → Telegram Alert
+Gas Detection → ESO32 → Python → Telegram Alert
 
 ---
 
