@@ -167,12 +167,3 @@ USB-C protection, communication interfaces, and support circuitry.
 <p align="center">
   <img src="assets/pcb/pcb-3d-view.jpg" width="750">
 </p>
-
-## Contributors
-
-https://github.com/AbdulhakimAH2
-
-https://github.com/salmamahmoud1532007-arch
-
-Developed as a multidisciplinary project combining Machine Learning,
-Embedded Systems, Hardware Design, and Software Integration.
