@@ -1,5 +1,5 @@
 # smart-nursey-home-project
-# 👶 Smart Nursery Guardian
+# Smart Nursery Guardian
 
 ### AI-Assisted Embedded Monitoring System for Infant Care
 
@@ -13,28 +13,28 @@ microcontroller and a Python application.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-- 🧠 Baby cry classification: Hungry, Tired, and Discomfort
-- 🎵 MFCC-based audio feature extraction
-- 🤖 Machine Learning classification
-- 🌡️ Temperature monitoring and automatic fan control
-- 🌙 Smart lighting using LDR and motion detection
-- 🚨 Gas/smoke detection
-- 📱 Telegram emergency notifications
-- ⚙️ Servo-based crib rocking
-- 🖥️ Python Tkinter GUI
-- 🔄 Serial communication between Python and STM32
-- 🔌 STM32-based sensor and actuator control
-- 🧩 Custom PCB design using Altium Designer
+Baby cry classification: Hungry, Tired, and Discomfort
+MFCC-based audio feature extraction
+Machine Learning classification
+Temperature monitoring and automatic fan control
+Smart lighting using LDR and motion detection
+Gas/smoke detection
+Telegram emergency notifications
+Servo-based crib rocking
+Python Tkinter GUI
+Serial communication between Python and STM32
+STM32-based sensor and actuator control
+Custom PCB design using Altium Designer
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The system is divided into two main parts:
 
-### 💻 Python Application
+### Python Application
 
 Responsible for:
 
@@ -62,7 +62,7 @@ The Python application and STM32 communicate through serial communication.
 
 ---
 
-## 🧠 Machine Learning Pipeline
+## Machine Learning Pipeline
 
 Baby Cry Audio
 
@@ -84,7 +84,7 @@ Hungry / Tired / Discomfort
 
 ---
 
-## 🔄 System Flow
+## System Flow
 
 Sensors → STM32 → Serial Communication → Python Application
 
@@ -94,7 +94,7 @@ Gas Detection → STM32 → Python → Telegram Alert
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 ### Software & AI
 
@@ -109,9 +109,9 @@ Gas Detection → STM32 → Python → Telegram Alert
 `Altium Designer` `Schematic Design` `PCB Layout`
 
 ---
-## 🧩 PCB Design
+## PCB Design
 
-### 🔌 PCB Schematic
+### PCB Schematic
 
 The complete schematic of the Smart Nursery Guardian board, including the
 STM32 microcontroller, power regulation, sensor interfaces, motor control,
@@ -121,25 +121,25 @@ USB-C protection, communication interfaces, and support circuitry.
   <img src="assets/pcb/pcb-schematic.jpg" width="900">
 </p>
 
-### 📐 PCB Component Placement
+### PCB Component Placement
 
 <p align="center">
   <img src="assets/pcb/pcb-component-placement.jpg" width="750">
 </p>
 
-### 🧩 PCB Layout & Routing
+### PCB Layout & Routing
 
 <p align="center">
   <img src="assets/pcb/pcb-layout.jpg" width="750">
 </p>
 
-### 🧊 3D PCB View
+### 3D PCB View
 
 <p align="center">
   <img src="assets/pcb/pcb-3d-view.jpg" width="750">
 </p>
 
-## 👨‍💻 Contributors
+## Contributors
 
 https://github.com/salmamahmoud1532007-arch
 
