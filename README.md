@@ -114,6 +114,30 @@ Gas Detection → STM32 → Python → Telegram Alert
 `Altium Designer` `Schematic Design` `PCB Layout`
 
 ---
+## Machine Learning Evaluation
+
+The baby-cry classification pipeline was evaluated using standard
+classification metrics and visualization tools.
+
+### Confusion Matrix
+
+<p align="center">
+  <img src="assets/ml/confusion-matrix.png" width="700">
+</p>
+
+This confusion matrix shows the classification performance across the
+three classes: hungry, tired, and discomfort.
+
+### ROC / AUC Curve
+
+<p align="center">
+  <img src="assets/ml/roc-auc-curve.png" width="700">
+</p>
+
+The ROC curves illustrate the model’s class-wise discrimination
+performance and compare it against a random baseline.
+
+---
 ## PCB Design
 
 ### PCB Schematic
