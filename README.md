@@ -45,7 +45,7 @@ Responsible for:
 - Telegram notifications
 - Serial communication
 
-### 🔧 STM32 Embedded System
+### STM32 Embedded System
 
 Responsible for:
 
