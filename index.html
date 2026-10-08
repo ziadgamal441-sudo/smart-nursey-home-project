@@ -117,6 +117,7 @@
             margin: 18px 0;
             color: var(--accent);
             white-space: pre-line;
+            overflow-x: auto;
         }
 
         table {
@@ -125,7 +126,8 @@
             margin-top: 15px;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid var(--border);
             padding: 12px;
             text-align: left;
@@ -136,7 +138,7 @@
             color: var(--dim);
         }
 
-        .pcb-image {
+        .project-image {
             width: 100%;
             margin-top: 15px;
             border: 1px solid var(--border);
@@ -177,6 +179,20 @@
             background: var(--panel);
             color: var(--accent);
             padding: 3px 6px;
+        }
+
+        @media (max-width: 650px) {
+            body {
+                padding: 30px 15px 60px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            table {
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -223,7 +239,7 @@
         <li>Gas and smoke safety detection</li>
         <li>Servo-based crib rocking</li>
         <li>Python Tkinter monitoring GUI</li>
-        <li>Serial communication between Python and the microcontroller</li>
+        <li>Serial communication between Python and STM32</li>
         <li>Telegram safety notifications</li>
         <li>Custom PCB designed using Altium Designer</li>
     </ul>
@@ -255,15 +271,53 @@ Sensors & Actuators
     <h2>machine learning pipeline</h2>
 
     <p>
-        Audio samples are processed before extracting features including
+        The baby-cry audio is processed before extracting features such as
         MFCC statistics, duration, RMS intensity, fundamental frequency,
         and zero-crossing rate.
     </p>
 
     <p>
-        The training pipeline includes dataset validation, audio augmentation,
-        model comparison, cross-validation, confusion matrix evaluation,
-        and ROC-AUC analysis.
+        Two machine learning algorithms were tested:
+        <strong>Random Forest</strong> and
+        <strong>Support Vector Machine (SVM)</strong>.
+        Their validation performance was compared to select the better-performing
+        model for the final system.
+    </p>
+
+    <p>
+        The training pipeline also includes dataset validation, audio augmentation,
+        cross-validation, model evaluation, confusion matrix analysis,
+        and ROC-AUC evaluation.
+    </p>
+
+
+    <h2>machine learning evaluation</h2>
+
+    <h3>01 — Confusion Matrix</h3>
+
+    <img
+        src="assets/ml/confusion-matrix.png"
+        alt="Smart Nursery Guardian Confusion Matrix"
+        class="project-image"
+    >
+
+    <p class="image-caption">
+        Confusion matrix showing classification performance across the
+        Hungry, Tired, and Discomfort classes.
+    </p>
+
+
+    <h3>02 — ROC / AUC Curves</h3>
+
+    <img
+        src="assets/ml/roc-auc-curve.png"
+        alt="Smart Nursery Guardian ROC AUC Curves"
+        class="project-image"
+    >
+
+    <p class="image-caption">
+        ROC curves showing the class-wise discrimination performance
+        compared with a random baseline.
     </p>
 
 
@@ -297,12 +351,12 @@ Sensors & Actuators
     <img
         src="assets/pcb/pcb-schematic.jpg"
         alt="Smart Nursery Guardian PCB Schematic"
-        class="pcb-image"
+        class="project-image"
     >
 
     <p class="image-caption">
-        Complete system schematic including STM32, sensors, power,
-        motor control, USB-C, UART and ST-Link.
+        Complete system schematic including STM32, sensors, power circuitry,
+        motor control, USB-C, UART, and ST-Link interfaces.
     </p>
 
 
@@ -311,26 +365,38 @@ Sensors & Actuators
     <img
         src="assets/pcb/pcb-component-placement.jpg"
         alt="PCB Component Placement"
-        class="pcb-image"
+        class="project-image"
     >
+
+    <p class="image-caption">
+        Initial component placement and board organization before final routing.
+    </p>
 
 
     <h3>03 — PCB Layout & Routing</h3>
 
     <img
         src="assets/pcb/pcb-layout.jpg"
-        alt="PCB Layout"
-        class="pcb-image"
+        alt="PCB Layout and Routing"
+        class="project-image"
     >
+
+    <p class="image-caption">
+        Final PCB layout and routing developed using Altium Designer.
+    </p>
 
 
     <h3>04 — 3D PCB View</h3>
 
     <img
         src="assets/pcb/pcb-3d-view.jpg"
-        alt="Smart Nursery Guardian 3D PCB"
-        class="pcb-image"
+        alt="Smart Nursery Guardian 3D PCB View"
+        class="project-image"
     >
+
+    <p class="image-caption">
+        3D visualization of the final Smart Nursery Guardian PCB.
+    </p>
 
 
     <h2>technologies</h2>
@@ -375,7 +441,7 @@ Sensors & Actuators
             <td>PCB Design</td>
             <td>
                 Altium Designer, Schematic Design,
-                PCB Layout & 3D Visualization
+                PCB Layout, 3D Visualization
             </td>
         </tr>
 
@@ -398,13 +464,6 @@ Gas Detection → Safety Alert → Telegram Notification
         <a href="https://github.com/ziadgamal441-sudo/smart-nursey-home-project">
             GitHub Repository
         </a>
-
-        <!-- Put your LinkedIn post link here later -->
-        <!--
-        <a href="YOUR_LINKEDIN_POST_URL">
-            LinkedIn Project Post
-        </a>
-        -->
 
     </div>
 
