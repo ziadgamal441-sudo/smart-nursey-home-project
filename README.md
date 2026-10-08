@@ -94,6 +94,11 @@ Gas Detection → STM32 → Python → Telegram Alert
 
 ---
 
+## Demo Videos
+
+[Google Drive - Project Testing Videos](https://drive.google.com/drive/folders/1hcd9a3ttxHD4KFWNh0qePvjvoXsfIVpL)
+
+
 ## Technologies
 
 ### Software & AI
