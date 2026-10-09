@@ -90,7 +90,7 @@ Sensors → ESP32 → Serial Communication → Python Application
 
 Baby Cry → Audio Processing → ML Classification → GUI Response
 
-Gas Detection → ESO32 → Python → Telegram Alert
+Gas Detection → ESP32 → Python → Telegram Alert
 
 ---
 
