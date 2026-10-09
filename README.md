@@ -8,7 +8,7 @@ that combines **Machine Learning, Embedded Systems, Sensor Monitoring,
 Real-Time Control, GUI Development, and IoT Alerts** to assist in infant care.
 
 The system analyzes baby-cry audio, monitors the nursery environment,
-and automatically responds to different conditions using an STM32
+and automatically responds to different conditions using an ESP32
 microcontroller and a Python application.
 
 ---
