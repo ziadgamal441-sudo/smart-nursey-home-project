@@ -24,8 +24,8 @@ Gas/smoke detection
 Telegram emergency notifications
 Servo-based crib rocking
 Python Tkinter GUI
-Serial communication between Python and STM32
-STM32-based sensor and actuator control
+Serial communication between Python and ESP32
+ESP32-based sensor and actuator control
 Custom PCB design using Altium Designer
 
 ---
@@ -45,7 +45,7 @@ Responsible for:
 - Telegram notifications
 - Serial communication
 
-### STM32 Embedded System
+### ESP32 Embedded System
 
 Responsible for:
 
@@ -143,7 +143,7 @@ performance and compare it against a random baseline.
 ### PCB Schematic
 
 The complete schematic of the Smart Nursery Guardian board, including the
-STM32 microcontroller, power regulation, sensor interfaces, motor control,
+ESP32 microcontroller, power regulation, sensor interfaces, motor control,
 USB-C protection, communication interfaces, and support circuitry.
 
 <p align="center">
